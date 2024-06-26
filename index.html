@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/images/logo.png">
+    <title>Mungo Gamers® | Página Oficial</title>
+    <script defer src="./public/bundle.js"></script>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="m-0 font-titulo w-full">
+    <p class="bg-nice text-white mb-0 top-0 text-right pr-4">Licenciado por: Gustavo</p>
+    <header class="w-full sticky top-0 z-1000">
+        <nav class="bg-blanc w-full text-nice py-3 grid grid-cols-2">
+            <div class="pl-8 tablet:ml-14">
+                <img class="cursor-pointer" src="./src/images/logo.png" width="54px" title="Mungo Gamers®" alt="Inicio">
+            </div>
+            <div class="flex justify-around items-center">
+                <div>
+                    <svg id="toggleMenuBtn" class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z"></path><path d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z"></path></svg>
+                    
+                </div>
+                <div>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                    <div class="hidden tablet:block">
+                        <input type="text" placeholder="¿Qué estás buscando...?" required>
+                        <div id="lupa">
+                            <i class="fas fa-search"></i>
+                        </div> 
+                    </div>
+                </div>
+                <div>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                    <div class="hidden tablet:block">
+                        <p><a class="hover:text-azu" href="internals/consolas.html">Consolas</a></p>
+                        <p><a class="hover:text-azu" href="internals/juegos.html">Juegos</a></p>
+                        <p><a class="hover:text-azu" href="internals/accesorios.html">Accesorios</a></>
+                        <p><a class="hover:text-azu" href="internals/tienda.html">Tienda</a></p>
+                        <p><a class="hover:text-azu" href="internals/nosotros.html">Nosotros</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fullscreenMenu" class="hidden fixed top-0 w-full h-screen bg-nice text-blanc z-1000">
+                <span id="closeLgBtn" class="close absolute top-3 right-5 text-2xl hover:text-azu cursor-pointer">&times;</span>
+                <div class="menu-content bg-blanc text-nice m-auto rounded-lg w-4/5 flex flex-col justify-center items-center">
+                    <form action="">
+                        <h2>Inicio de Sesión</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <label for="email">Email</label>
+                            <input required type="email" placeholder="Ingresa tu email">
+                        </div>
+            
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <label for="password">Contraseña</label>
+                            <input required type="password" placeholder="Ingresa tu contraseña">
+                        </div>
+            
+                        <div class="forget">
+                            <label for=""><input type="checkbox">Recuédame  <a href="#"> Olvidé mi contraseña</a></label>
+                        </div>
+            
+                        <button type="button">Iniciar sesión</button>
+                            <div class="register">
+                                <p>¿Aún no tiene una cuenta? <a href="#">Registrarme</a></p>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="fixed bottom-5 right-5 mini:bottom-4 mini:right-3 z-10">
+        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener">
+            <img id="wasapa" src="./src/images/whatsapp-logo.png" width="50px" alt="WhatsApp">
+        </a>
+   </div> 
+
+   <section>
+        <div class="w-full bg-nice flex justify-center items-center">
+            <img class="my-0 mx-auto w-full h-auto cursor-pointer" src="./src/images/sliders/slider1.jpg" alt="Slider 1">
+        </div>
+    
+        <div class="p-2 bg-blanc text-center">
+            <p class="text-xl mt-2 mb-4">Juegos para Ps4 en estreno</p>
+            
+            <div class="grid grid-cols-2 gap-4 tablet:grid-cols-4">
+                <div class="w-full flex justify-center">
+                    <img class="hover:cursor-pointer hover:opacity-60 rounded-lg" src="./src/images/fifa22.png" width="90%" height="40%" title="Fifa 22">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img class="hover:cursor-pointer hover:opacity-60 rounded-lg" src="./src/images/god_of_war_ragnarok.jpg" width="90%" height="40%" title="God of War Ragnarok">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img class="hover:cursor-pointer hover:opacity-60 rounded-lg" src="./src/images/gran_turismo_7.png" width="90%" height="40%" title="Gran Turismo 7">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img class="hover:cursor-pointer hover:opacity-60 rounded-lg" src="./src/images/horizon_zero_down.jpg" width="90%" height="40%" title="Horizon Zero Down">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full text-center p-1 bg-blanc flex flex-col items-center">
+            <div class="w-11/12">
+                <img class="hover:opacity-70 rounded-2xl py-2 cursor-pointer" src="./src/images/accesorios_ps4.jpg" alt="">
+                <img class="hover:opacity-70 rounded-2xl py-2 cursor-pointer" src="./src/images/combo_ps5.jpg" alt="">
+            </div>
+            <div class="w-11/12">
+                <img class="hover:opacity-70 rounded-2xl py-2 cursor-pointer" src="./src/images/consolas_ps4.jpg" alt="">
+                <img class="hover:opacity-70 rounded-2xl py-2 cursor-pointer" src="./src/images/juegos_ps4.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="w-full">
+            <a href="gran_turismo7.html"><img src="./src/images/gran_turismo_estreno.png" alt="Gran Turismo 7"></a>
+        </div>
+
+        <div class="w-full grid grid-cols-3 py-3">
+            <div class="w-full flex justify-center">            
+                <img class="hover:opacity-70 transition-all duration-550 ease-in-out w-11/12 rounded-2xl cursor-pointer" src="./src/images/a/descuentos.jpg" alt="">
+            </div>
+            <div class="w-full flex justify-center">
+                <img class="hover:opacity-70 transition-all duration-550 ease-in-out w-11/12 rounded-2xl cursor-pointer" src="./src/images/a/ofertas_candentes.jpg" alt="">
+            </div>
+            <div class="w-full flex justify-center">
+                <img class="hover:opacity-70 transition-all duration-550 ease-in-out w-11/12 rounded-2xl cursor-pointer" src="./src/images/a/gratuitos.jpg" alt="">
+            </div>
+        </div>
+   </section>
+
+    <footer class="bg-azu">
+        <div class="">
+            <div class="flex justify-center pt-3">
+                <svg class="m-2 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
+                <svg class="m-2 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
+                <svg class="m-2 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                <svg class="m-2 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                <svg class="m-2 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.265 3 3 6.236v13.223h4.502V21l2.531.85 2.392-2.391h3.658l4.923-4.924V3H4.265zm15.052 10.691-2.813 2.814h-4.502l-2.391 2.391v-2.391H5.813V4.688h13.504v9.003zm-2.812-5.767v4.923h-1.688V7.924h1.688zm-4.502 0v4.923h-1.688V7.924h1.688z"></path></svg>
+            </div>
+        
+            <div class="flex flex-col items-center mt-4">
+                <div class="w-3/4 flex justify-between">
+                    <p class="">Acerca de:</p>
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                    <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    
+                    <div class="bg-yellow-300 hidden">
+                        <h2>Comunícate con nosotros</h2>
+                        <p>Central telefónica:</p>
+                        <p>(01) 630-4517</p>
+                        <p>Correo electrónico:</p>
+                        <p>atencionalcliente@mundogamers.com</p>
+                        <p>Horario de atención:</p>
+                        <p>De lunes a viernes de 9:00 AM a 7:00 PM</p>
+                    </div>
+                </div>
+                <div class="w-3/4 flex justify-between">
+                    <p class="">Categorías</p>
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                    <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    
+                    <div class="bg-yellow-300 hidden">
+                        <p>Juegos</p>
+                        <p>Consolas</p>
+                        <p>Accesorios</p>
+                        <p>Computadoras</p>
+                    </div>
+                </div>
+                <div class="w-3/4 flex justify-between">
+                    <p class="">Medios de Pago</p>
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                    <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    
+                    <div class="bg-yellow-300 hidden">
+                        <p>Yape</p>
+                        <p>Pago Efectivo</p>
+                        <p>BCP</p>
+                        <p>BBVA</p>
+                        <div class="flex">
+                            <img class="m-2 w-9 rounded-lg" src="./src/images/yape.png" width="55px" alt="" title="Yape">
+                            <img class="m-2 w-9 rounded-lg" src="./src/images/pago_efectivo.png" width="55px" alt="" title="Pago Efectivo">
+                            <img class="m-2 w-9 rounded-lg" src="./src/images/bcp.png" width="55px" alt="" title="BCP">
+                            <img class="m-2 w-9 rounded-lg" src="./src/images/bbva.png" width="55px" alt="" title="BBVA">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-4 pb-8">
+            <h2>&copy; 2022-2024 Mundo Gamers</h2>
+        </div>
+    </footer>
+</body>
+</html>
