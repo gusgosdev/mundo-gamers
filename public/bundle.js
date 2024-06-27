@@ -5,24 +5,43 @@ const login = () => {
     const closeLoginBtn    = document.getElementById("closeLgBtn"); // Boton cerrar
     const fullscreenMenu  = document.getElementById("fullscreenMenu"); // All el usuario pantalla
   
+    // Abrir el login
     toggleMenuBtn.addEventListener('click', () => {
-        fullscreenMenu.style.display = 'block';
+        fullscreenMenu.classList.remove('invisible');
         console.log('Se abrió el login');
     });
 
+    // Cerrar el login
     closeLoginBtn.addEventListener('click', () => {
-      fullscreenMenu.style.display = "none";
+      fullscreenMenu.classList.add('invisible');
       console.log('Se cerró el login');
     });
+};
 
-// Al hacer click en otro lado se cierra el login
-    // window.addEventListener("click", (event) => {
-    //   if (event.target === fullscreenMenu) {
-    //     fullscreenMenu.style.display = "none";
-    //   }
-    // });
+const search = () => {
+    const toggleMenuBtn   = document.getElementById("toggleMenuBtn2"); // Boton lupa
+    const closeLoginBtn    = document.getElementById("closeLgBtn2"); // Boton cerrar
+    const fullscreenMenu  = document.getElementById("fullscreenMenu2"); // All el usuario pantalla
+  
+    // Abrir el search
+    toggleMenuBtn.addEventListener('click', () => {
+        fullscreenMenu.classList.remove('invisible');
+        console.log('Se abrió el login');
+    });
+
+    // Cerrar el search
+    closeLoginBtn.addEventListener('click', () => {
+      fullscreenMenu.classList.add('invisible');
+      console.log('Se cerró el login');
+    });
+};
+
+var btn = {
+    login,
+    search
 };
 
 console.log('Hola mundo');
 
-login();
+btn.login();
+btn.search();

@@ -1,5 +1,6 @@
-import login from "./botones-header-home";
+import btn from './botones-header-home';
 
 console.log('Hola mundo');
 
-login();
+btn.login();
+btn.search();
