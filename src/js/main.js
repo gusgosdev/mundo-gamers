@@ -4,3 +4,4 @@ console.log('Hola mundo');
 
 btn.login();
 btn.search();
+btn.menu();
